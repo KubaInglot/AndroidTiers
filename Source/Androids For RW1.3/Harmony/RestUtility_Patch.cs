@@ -20,7 +20,7 @@ namespace MOARANDROIDS
         public class IsValidBedFor_Patch
         {
             [HarmonyPostfix]
-            public static void Listener(Thing bedThing, Pawn sleeper, Pawn traveler, bool sleeperWillBePrisoner, bool checkSocialProperness, bool allowMedBedEvenIfSetToNoCare, bool ignoreOtherReservations, ref bool __result)
+            public static void Listener(Thing bedThing, Pawn sleeper, Pawn traveler, bool checkSocialProperness, bool allowMedBedEvenIfSetToNoCare, bool ignoreOtherReservations, GuestStatus? guestStatus, ref bool __result)
             {
                 try
                 {

@@ -54,6 +54,19 @@
     <techHediffsChance>0.1</techHediffsChance>
     <initialResistanceRange>10~15</initialResistanceRange>
 	<initialWillRange>1~3</initialWillRange>
+	<forcedHair>Shaved</forcedHair>
+		<styleItemTags>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
   </PawnKindDef>
  
  <PawnKindDef>
@@ -106,6 +119,19 @@
     <techHediffsChance>0.08</techHediffsChance>
     <initialResistanceRange>10~15</initialResistanceRange>
 	<initialWillRange>1~3</initialWillRange>
+	<forcedHair>Shaved</forcedHair>
+		<styleItemTags>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
   </PawnKindDef>
 
   <PawnKindDef>
@@ -159,6 +185,19 @@
     <techHediffsChance>0.08</techHediffsChance>
     <initialResistanceRange>20~30</initialResistanceRange>
 	<initialWillRange>1~3</initialWillRange>
+	<forcedHair>Shaved</forcedHair>
+		<styleItemTags>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
   </PawnKindDef>
 
 
@@ -215,6 +254,19 @@
     <techHediffsChance>0.28</techHediffsChance>
     <initialResistanceRange>30~45</initialResistanceRange>
 	<initialWillRange>2~4</initialWillRange>
+	<forcedHair>Shaved</forcedHair>
+		<styleItemTags>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
   </PawnKindDef>
  
   <PawnKindDef>
@@ -270,5 +322,18 @@
     <techHediffsChance>0.5</techHediffsChance>
     <initialResistanceRange>40~60</initialResistanceRange>
 	<initialWillRange>2~4</initialWillRange>
+	<forcedHair>Shaved</forcedHair>
+		<styleItemTags>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
   </PawnKindDef>
 </Defs>

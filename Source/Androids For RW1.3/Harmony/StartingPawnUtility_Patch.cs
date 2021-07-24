@@ -84,5 +84,18 @@ namespace MOARANDROIDS
                 }
             }
         }
+
+        [HarmonyPatch(typeof(Pawn_HealthTracker), "AddHediff", new Type[] { typeof(HediffDef), typeof(BodyPartRecord), typeof(DamageInfo), typeof(DamageWorker.DamageResult) })]
+        [HarmonyPriority(Priority.First)]
+        public class Pawn_HealthTracker_AddHediff {
+            [HarmonyPrefix]
+            public static bool Patch(HediffDef def, BodyPartRecord part, ref Hediff __result) {
+                if (def == null) {
+                    __result = null;
+                    return false;
+                }
+                return true;
+            }
+        }
     }
 }

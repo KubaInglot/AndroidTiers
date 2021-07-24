@@ -30,7 +30,6 @@
 		<defName>PlayerColonyAndroid</defName>
 		<label>New Android Arrivals</label>
 		<description>Your Android colony.</description>
-		
 		<isPlayer>true</isPlayer>
 		<backstoryCategories>
 			<li>Civil</li>

@@ -20,7 +20,7 @@ namespace MOARANDROIDS
         public class RenderOverBody_Patch
         {
             [HarmonyPrefix]
-            public static bool Listener(Vector3 drawLoc, Mesh bodyMesh, Quaternion quat, bool forPortrait, Pawn ___pawn)
+            public static bool Listener(Vector3 drawLoc, Mesh bodyMesh, Quaternion quat, Pawn ___pawn)
             {
                 if (Utils.ExceptionAndroidWithSkinList.Contains(___pawn.def.defName))
                     return false;
