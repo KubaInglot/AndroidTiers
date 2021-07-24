@@ -73,7 +73,7 @@ namespace BlueLeakTest
             return codeInstructions;
         }
     }*/
-        [HarmonyPatch(typeof(JobDriver_Vomit))]
+    [HarmonyPatch(typeof(JobDriver_Vomit))]
     [HarmonyPatch("MakeNewToils")]
     internal static class DeclineVomitJob
     {
@@ -289,7 +289,7 @@ namespace BlueLeakTest
         }
     }
 
-        [HarmonyPatch(typeof(CompFoodPoisonable))]
+    [HarmonyPatch(typeof(CompFoodPoisonable))]
     [HarmonyPatch("PostIngested")]
     internal static class AndroidsFoodPoisonOverride
     {
@@ -307,7 +307,7 @@ namespace BlueLeakTest
         }
     }
 
-        [HarmonyPatch(typeof(Pawn_HealthTracker))]
+    [HarmonyPatch(typeof(Pawn_HealthTracker))]
     [HarmonyPatch("MakeDowned")]
     internal static class DiesUponDowned
     {

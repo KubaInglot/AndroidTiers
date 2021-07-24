@@ -323,7 +323,7 @@ namespace MOARANDROIDS
 
                 if (recipient.guest != null)
                 {
-                    recipient.guest.SetGuestStatus(null, false);
+                    recipient.guest.SetGuestStatus(null, GuestStatus.Guest);
                 }
             }
 
@@ -337,7 +337,7 @@ namespace MOARANDROIDS
 
                 if (recipient.guest != null)
                 {
-                    recipient.guest.SetGuestStatus(Faction.OfPlayer, true);
+                    recipient.guest.SetGuestStatus(Faction.OfPlayer, GuestStatus.Prisoner);
                 }
             }
         }
@@ -352,13 +352,13 @@ namespace MOARANDROIDS
                     recipient.SetFaction(Faction.OfPlayer, null);
 
                 if (recipient.guest != null)
-                    recipient.guest.SetGuestStatus(null, false);
+                    recipient.guest.SetGuestStatus(null, GuestStatus.Guest);
 
                 if (cpawn.Faction != tmp)
                     cpawn.SetFaction(tmp, null);
 
                 if (cpawn.guest != null)
-                    cpawn.guest.SetGuestStatus(Faction.OfPlayer, true);
+                    cpawn.guest.SetGuestStatus(Faction.OfPlayer, GuestStatus.Prisoner);
 
                 if (recipient.workSettings != null)
                     recipient.workSettings.EnableAndInitialize();
@@ -372,13 +372,13 @@ namespace MOARANDROIDS
                     cpawn.SetFaction(Faction.OfPlayer, null);
 
                 if (cpawn.guest != null)
-                    cpawn.guest.SetGuestStatus(null, false);
+                    cpawn.guest.SetGuestStatus(null, GuestStatus.Guest);
 
                 if (recipient.Faction != tmp)
                     recipient.SetFaction(tmp, null);
 
                 if (recipient.guest != null)
-                    recipient.guest.SetGuestStatus(Faction.OfPlayer, true);
+                    recipient.guest.SetGuestStatus(Faction.OfPlayer, GuestStatus.Prisoner);
 
                 if (cpawn.workSettings != null)
                     cpawn.workSettings.EnableAndInitialize();
@@ -1068,7 +1068,7 @@ namespace MOARANDROIDS
             if (!external)
             {
                 Utils.soundDefSurrogateConnection.PlayOneShot(null);
-                MoteMaker.ThrowDustPuffThick(controlled.Position.ToVector3Shifted(), controlled.Map, 4.0f, Color.blue);
+                FleckMaker.ThrowDustPuffThick(controlled.Position.ToVector3Shifted(), controlled.Map, 4.0f, Color.blue);
             }
 
             //Définition du controlleur
@@ -1387,12 +1387,12 @@ namespace MOARANDROIDS
 
                     if (csurrogate.guest != null)
                     {
-                        csurrogate.guest.SetGuestStatus(null, false);
+                        csurrogate.guest.SetGuestStatus(null, GuestStatus.Guest);
                     }
 
                     if (cp.guest != null)
                     {
-                        cp.guest.SetGuestStatus(Faction.OfPlayer, true);
+                        cp.guest.SetGuestStatus(Faction.OfPlayer, GuestStatus.Prisoner);
                     }
 
                     //On va egalement forcer la fin du controlMode car le joueur na plus de controle pour l'enlever sur le colon

@@ -279,7 +279,7 @@ namespace MOARANDROIDS
 
             //ANimation sonore et visuelle
             Utils.soundDefSurrogateConnection.PlayOneShot(null);
-            MoteMaker.ThrowDustPuffThick(pos.ToVector3Shifted(), cmap, 4.0f, Color.red);
+            FleckMaker.ThrowDustPuffThick(pos.ToVector3Shifted(), cmap, 4.0f, Color.red);
 
             Find.DesignatorManager.Deselect();
         }

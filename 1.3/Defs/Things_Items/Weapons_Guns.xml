@@ -80,7 +80,7 @@
     <tradeability>None</tradeability>
     <techLevel>Spacer</techLevel>
     <destroyOnDrop>False</destroyOnDrop>
-    <menuHidden>False</menuHidden>
+<!--    <menuHidden>False</menuHidden>-->
     <weaponTags>
       <li>MechM7Gun</li>
     </weaponTags>
@@ -163,7 +163,7 @@
     <tradeability>None</tradeability>
     <techLevel>Spacer</techLevel>
     <destroyOnDrop>False</destroyOnDrop>
-    <menuHidden>False</menuHidden>
+<!--    <menuHidden>False</menuHidden>-->
     <weaponTags>
       <li>MechM7Gun</li>
     </weaponTags>
@@ -248,7 +248,7 @@
     <tradeability>None</tradeability>
     <techLevel>Spacer</techLevel>
     <destroyOnDrop>False</destroyOnDrop>
-    <menuHidden>False</menuHidden>
+<!--    <menuHidden>False</menuHidden> -->
     <weaponTags>
       <li>MechM7Gun</li>
     </weaponTags>

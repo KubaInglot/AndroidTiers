@@ -49,7 +49,7 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
       <nameOnTameChance>1</nameOnTameChance>
 	  <leatherDef>Tainted_Skin</leatherDef>
-      <trainability>Simple</trainability>
+      <trainability>None</trainability>
       <wildness>0.4</wildness>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
@@ -183,7 +183,7 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
       <nameOnTameChance>1</nameOnTameChance>
 	  <leatherDef>Tainted_Skin</leatherDef>
-      <trainability>Simple</trainability>
+      <trainability>None</trainability>
       <wildness>0.4</wildness>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>

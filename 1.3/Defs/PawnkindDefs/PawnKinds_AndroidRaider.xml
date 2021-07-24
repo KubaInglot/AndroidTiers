@@ -52,6 +52,8 @@
       <li>Advanced</li>
     </techHediffsTags>
     <techHediffsChance>0.1</techHediffsChance>
+    <initialResistanceRange>10~15</initialResistanceRange>
+	<initialWillRange>1~3</initialWillRange>
   </PawnKindDef>
  
  <PawnKindDef>
@@ -102,6 +104,8 @@
       <li>Advanced</li>
     </techHediffsTags>
     <techHediffsChance>0.08</techHediffsChance>
+    <initialResistanceRange>10~15</initialResistanceRange>
+	<initialWillRange>1~3</initialWillRange>
   </PawnKindDef>
 
   <PawnKindDef>
@@ -153,6 +157,8 @@
       <li>Advanced</li>
     </techHediffsTags>
     <techHediffsChance>0.08</techHediffsChance>
+    <initialResistanceRange>20~30</initialResistanceRange>
+	<initialWillRange>1~3</initialWillRange>
   </PawnKindDef>
 
 
@@ -207,6 +213,8 @@
       <li>Advanced</li>
     </techHediffsTags>
     <techHediffsChance>0.28</techHediffsChance>
+    <initialResistanceRange>30~45</initialResistanceRange>
+	<initialWillRange>2~4</initialWillRange>
   </PawnKindDef>
  
   <PawnKindDef>
@@ -260,6 +268,7 @@
       <li>Advanced</li>
     </techHediffsTags>
     <techHediffsChance>0.5</techHediffsChance>
+    <initialResistanceRange>40~60</initialResistanceRange>
+	<initialWillRange>2~4</initialWillRange>
   </PawnKindDef>
-  
 </Defs>

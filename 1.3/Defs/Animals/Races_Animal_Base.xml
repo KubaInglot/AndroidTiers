@@ -16,7 +16,7 @@
 			<nameGenerator>NamerAnimalGenericMale</nameGenerator>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0</manhunterOnTameFailChance>
-			<nameOnNuzzleChance>1</nameOnNuzzleChance>
+<!--			<nameOnNuzzleChance>1</nameOnNuzzleChance>-->
 			<hediffGiverSets>
 				<li>AndroidStandardAtlas</li>
 			</hediffGiverSets>

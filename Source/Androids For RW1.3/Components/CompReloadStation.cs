@@ -5,7 +5,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
-using System.Text.RegularExpressions;
+//using System.Text.RegularExpressions;
 
 namespace MOARANDROIDS
 {
@@ -156,7 +156,7 @@ namespace MOARANDROIDS
                     if (ok)
                     {
                         //Check si atteignable par l'android
-                        if (android.CanReach(adjPos, Verse.AI.PathEndMode.OnCell, Danger.Deadly, false, TraverseMode.ByPawn))
+                        if (android.CanReach(adjPos, Verse.AI.PathEndMode.OnCell, Danger.Deadly, false, false, TraverseMode.ByPawn))
                         {
                             //Check si emplacement pas deja réservé par un android 
                             if( !android.Map.pawnDestinationReservationManager.IsReserved(adjPos))

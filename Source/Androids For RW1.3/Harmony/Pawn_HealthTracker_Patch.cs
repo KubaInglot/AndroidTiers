@@ -33,7 +33,9 @@ namespace MOARANDROIDS
                             //Simulation mort surrogate organic
                             PawnDiedOrDownedThoughtsUtility.TryGiveThoughts(___pawn, null, PawnDiedOrDownedThoughtsKind.Died);
 
-                            Pawn spouse = ___pawn.GetSpouse();
+//                            Pawn spouse = ___pawn.GetSpouse();
+                            Pawn spouse = ___pawn.relations.GetFirstDirectRelationPawn(PawnRelationDefOf.Spouse, null);
+
                             if (spouse != null && !spouse.Dead && spouse.needs.mood != null)
                             {
                                 MemoryThoughtHandler memories = spouse.needs.mood.thoughts.memories;
@@ -106,7 +108,7 @@ namespace MOARANDROIDS
                         if (___pawn.IsPrisoner)
                         {
                             if (___pawn.guest != null)
-                                ___pawn.guest.SetGuestStatus(Faction.OfPlayer, false);
+                                ___pawn.guest.SetGuestStatus(Faction.OfPlayer, GuestStatus.Guest);
                         }
                         if (___pawn.workSettings == null)
                         {

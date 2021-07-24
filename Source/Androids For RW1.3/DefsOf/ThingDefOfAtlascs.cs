@@ -10,10 +10,13 @@ namespace MOARANDROIDS
         public static ThingDef MechFallBeam;
 
         public static ThingDef SteelWool;
-
-        public static ThingDef Mote_SleepZ;
-
-        public static ThingDef Mote_HealingCross;
     }
 
+    [DefOf]
+    public static class FleckDefOf
+    {
+        public static FleckDef SleepZ;
+
+        public static FleckDef HealingCross;
+    }
 }

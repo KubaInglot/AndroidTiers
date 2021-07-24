@@ -33,7 +33,8 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<initialResistanceRange>50~75</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
@@ -58,6 +59,8 @@
 		</techHediffsTags>
 		<techHediffsChance>0.1</techHediffsChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>50~75</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
@@ -75,6 +78,8 @@
 		<defaultFactionType>PlayerColonyAndroid</defaultFactionType>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>40~60</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
 	</PawnKindDef>
 
 
@@ -93,6 +98,8 @@
 		<defaultFactionType>PlayerColonyAndroid</defaultFactionType>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>30~45</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
 	</PawnKindDef>
 
 
@@ -111,6 +118,8 @@
 		<defaultFactionType>PlayerColonyAndroid</defaultFactionType>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>10~15</initialResistanceRange>
+		<initialWillRange>1~3</initialWillRange>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
@@ -128,6 +137,8 @@
 		<defaultFactionType>PlayerColonyAndroid</defaultFactionType>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>20~30</initialResistanceRange>
+		<initialWillRange>1~3</initialWillRange>
 	</PawnKindDef>
 
 	<!--Androids With Real Backstories-->
@@ -147,9 +158,11 @@
 		<defaultFactionType>PlayerColonyAndroid</defaultFactionType>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<initialResistanceRange>40~60</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
 	</PawnKindDef>
 
 
@@ -168,9 +181,11 @@
 		<defaultFactionType>PlayerColonyAndroid</defaultFactionType>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<initialResistanceRange>30~45</initialResistanceRange>
+		<initialWillRange>2~4</initialWillRange>
 	</PawnKindDef>
 
 
@@ -189,9 +204,11 @@
 		<defaultFactionType>PlayerColonyAndroid</defaultFactionType>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<initialResistanceRange>10~15</initialResistanceRange>
+		<initialWillRange>1~3</initialWillRange>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
@@ -209,9 +226,11 @@
 		<minGenerationAge>20</minGenerationAge>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-    </apparelTags>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<initialResistanceRange>20~30</initialResistanceRange>
+		<initialWillRange>1~3</initialWillRange>
 	</PawnKindDef>
 
 </Defs>

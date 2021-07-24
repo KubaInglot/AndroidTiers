@@ -1243,7 +1243,8 @@ namespace MOARANDROIDS
                 {
                     PawnDiedOrDownedThoughtsUtility.TryGiveThoughts(dest, null, PawnDiedOrDownedThoughtsKind.Died);
 
-                    Pawn spouse = dest.GetSpouse();
+//                    Pawn spouse = dest.GetSpouse();
+                    Pawn spouse = dest.relations.GetFirstDirectRelationPawn(PawnRelationDefOf.Spouse, null);
                     if (spouse != null && !spouse.Dead && spouse.needs.mood != null)
                     {
                         MemoryThoughtHandler memories = spouse.needs.mood.thoughts.memories;

@@ -15,6 +15,15 @@
 		<techLevel>Neolithic</techLevel>
 		<canUseAvoidGrid>false</canUseAvoidGrid>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<raidLootValueFromPointsCurve>
+			<points>
+				<li>(35,     8)</li>
+				<li>(100,   60)</li>
+				<li>(1000, 250)</li>
+				<li>(2000, 400)</li>
+				<li>(4000, 500)</li>
+			</points>
+		</raidLootValueFromPointsCurve>
 	</FactionDef>
 
 	<FactionDef ParentName="PlayerFactionBase">
@@ -36,9 +45,10 @@
 		<startingResearchTags>
 			<li>ClassicStart</li>
 		</startingResearchTags>
-		<hairTags>
+<!--		<hairTags>
 			<li>Urban</li>
 		</hairTags>
+-->
 		<apparelStuffFilter>
 			<thingDefs>
 				<li>Synthread</li>
@@ -77,9 +87,10 @@
 			<li>BigMeanies</li>
 		</backstoryCategories>
 		<geneticVariance>1</geneticVariance>
-		<hairTags>
+<!--		<hairTags>
 			<li>Punk</li>
 		</hairTags>
+-->
 		<allowedArrivalTemperatureRange>
 			<min>-70</min>
 			<max>55</max>
@@ -93,6 +104,15 @@
 				<li>(100000, 10000)</li>
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
+		<raidLootValueFromPointsCurve>
+			<points>
+				<li>(35,     8)</li>
+				<li>(100,   60)</li>
+				<li>(1000, 250)</li>
+				<li>(2000, 400)</li>
+				<li>(4000, 500)</li>
+			</points>
+		</raidLootValueFromPointsCurve>
 		<pawnGroupMakers>
 			<li>
 				<!-- Normal fights, standard mix -->
@@ -127,7 +147,7 @@
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 	</FactionDef>
 
-	<FactionDef ParentName="HumanFactionBase">
+	<FactionDef ParentName="FactionBase">
 		<defName>AndroidFriendliesAtlas</defName>
 		<label>Civil Androids</label>
 		<description>The androids that make up this faction have either crashed here or were made here, they wish to live peaceful lives without conflict and generally see humanity as a friend rather than a danger. Their colonies tend to be high tech in comparison to the rest of the Rimworld, not uncommonly seen utilising advanced charge weaponry when defending them from raiders. \n\n This faction usually trades high-tech goods along with the basic bulk supplies.</description>
@@ -135,7 +155,7 @@
 			<li>(0.65, 0.60, 0.70)</li>
 			<li>(0.95, 0.90, 1)</li>
 		</colorSpectrum>
-		<startingGoodwill>
+<!--		<startingGoodwill>
 			<min>0</min>
 			<max>10</max>
 		</startingGoodwill>
@@ -143,6 +163,7 @@
 			<min>-50</min>
 			<max>50</max>
 		</naturalColonyGoodwill>
+-->
 		<pawnSingular>android</pawnSingular>
 		<pawnsPlural>androids</pawnsPlural>
 		<listOrderPriority>35</listOrderPriority>
@@ -161,9 +182,10 @@
 			<li>CollectiveSoldiers</li>
 		</backstoryCategories>
 		<geneticVariance>0.8</geneticVariance>
-		<hairTags>
+<!--		<hairTags>
 			<li>Rural</li>
 		</hairTags>
+-->
 		<caravanTraderKinds>
 			<li>Caravan_AndroidCollective_BulkGoods</li>
 			<li>Caravan_AndroidCollective_CombatSupplier</li>

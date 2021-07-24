@@ -5,7 +5,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
-using System.Text.RegularExpressions;
+//using System.Text.RegularExpressions;
 using Verse.Sound;
 
 namespace MOARANDROIDS
@@ -733,7 +733,7 @@ namespace MOARANDROIDS
             controlledTurrets[mind] = turret;
 
             Utils.soundDefTurretConnection.PlayOneShot(null);
-            MoteMaker.ThrowDustPuffThick(turret.Position.ToVector3Shifted(), turret.Map, 4.0f, Color.blue);
+            FleckMaker.ThrowDustPuffThick(turret.Position.ToVector3Shifted(), turret.Map, 4.0f, Color.blue);
 
             Messages.Message("ATPP_SurrogateConnectionOK".Translate(mind.LabelShortCap, turret.LabelShortCap), turret, MessageTypeDefOf.PositiveEvent);
         }

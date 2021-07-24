@@ -18,7 +18,7 @@ namespace MOARANDROIDS
 
         private bool TryFindTile(out int tile)
         {
-            return TileFinder.TryFindNewSiteTile(out tile, 7, 15, true, false, -1);
+            return TileFinder.TryFindNewSiteTile(out tile, 7, 15, true);
         }
 
         protected override bool TryExecuteWorker(IncidentParms parms)
@@ -27,7 +27,7 @@ namespace MOARANDROIDS
             {
                 return false;
             }
-            if (!TileFinder.TryFindNewSiteTile(out int tile, 8, 30, false, true, -1))
+            if (!TileFinder.TryFindNewSiteTile(out int tile, 8, 30, false))
             {
                 return false;
             }

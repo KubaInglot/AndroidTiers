@@ -4,7 +4,7 @@
   <FleshTypeDef>
     <defName>Android</defName>
     <corpseCategory>CorpsesMechanoid</corpseCategory>
-    <wounds>
+    <genericWounds>
       <li>
         <texture>Things/Wounds/WoundAndroidA</texture>
       </li>
@@ -23,14 +23,14 @@
       <li>
         <texture>Things/Pawn/Wounds/WoundMechC</texture>
       </li>
-    </wounds>
+    </genericWounds>
   </FleshTypeDef>
 
  
   <FleshTypeDef>
     <defName>MechanisedInfantry</defName>
     <corpseCategory>CorpsesMechanoid</corpseCategory>
-    <wounds>
+    <genericWounds>
       <li>
         <texture>Things/Wounds/WoundAndroidA</texture>
       </li>
@@ -49,7 +49,7 @@
       <li>
         <texture>Things/Pawn/Wounds/WoundMechC</texture>
       </li>
-    </wounds>
+    </genericWounds>
   </FleshTypeDef>
 
 </Defs>

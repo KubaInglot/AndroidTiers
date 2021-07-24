@@ -25,12 +25,13 @@ namespace MOARANDROIDS
 
 
         [HarmonyPatch(typeof(PawnRenderer), "RenderPawnInternal")]
-        [HarmonyPatch(new Type[] { typeof(Vector3), typeof(float), typeof(bool), typeof(Rot4), typeof(Rot4), typeof(RotDrawMode), typeof(bool), typeof(bool), typeof(bool) })]
+        [HarmonyPatch(new Type[] { typeof(Vector3), typeof(float), typeof(bool), typeof(Rot4), typeof(Rot4), typeof(RotDrawMode), typeof(PawnRenderFlags) })]
         public class RenderPawnInternal_Patch
         {
             [HarmonyPostfix]
-            public static void Listener(ref PawnRenderer __instance, Vector3 rootLoc, float angle, bool renderBody, Rot4 bodyFacing, Rot4 headFacing, RotDrawMode bodyDrawType, bool portrait, bool headStump, bool invisible, Pawn ___pawn)
+            public static void Listener(ref PawnRenderer __instance, Vector3 rootLoc, float angle, bool renderBody, Rot4 bodyFacing, Rot4 headFacing, RotDrawMode bodyDrawType, PawnRenderFlags flags, Pawn ___pawn)
             {
+//                , bool portrait, bool headStump, bool invisible
                 try
                 {
                     bool state = false;
@@ -47,9 +48,9 @@ namespace MOARANDROIDS
                         || (___pawn.def.defName == Utils.TX2K && (cas.TXHurtedHeadSet || cas.TXHurtedHeadSet2))
                         || (___pawn.def.defName == Utils.TX3 && (cas.TXHurtedHeadSet || cas.TXHurtedHeadSet2)) 
                         || (___pawn.def.defName == Utils.TX4 && (cas.TXHurtedHeadSet || cas.TXHurtedHeadSet2)))
-                        && !___pawn.Dead && !headStump)
+                        && !___pawn.Dead && PawnRenderFlags.HeadStump != flags)
                     {
-                        if (!portrait)
+                        if (PawnRenderFlags.Portrait != flags)
                         {
                             if (___pawn != null)
                             {
@@ -61,7 +62,7 @@ namespace MOARANDROIDS
                             }
                         }
                         else
-                            state = portrait;
+                            state = true;
                     }
 
                     if (state)
@@ -110,11 +111,11 @@ namespace MOARANDROIDS
 
                             if (isHorizontal)
                             {
-                                GenDraw.DrawMeshNowOrLater(mesh, loc, quaternion, Tex.getEyeGlowEffect(color, gender, type, 0).MatSingle, portrait);
+                                GenDraw.DrawMeshNowOrLater(mesh, loc, quaternion, Tex.getEyeGlowEffect(color, gender, type, 0).MatSingle, PawnRenderFlags.Portrait == flags);
                             }
                             else
                             {
-                                GenDraw.DrawMeshNowOrLater(mesh, loc, quaternion, Tex.getEyeGlowEffect(color, gender, type, 1).MatSingle, portrait);
+                                GenDraw.DrawMeshNowOrLater(mesh, loc, quaternion, Tex.getEyeGlowEffect(color, gender, type, 1).MatSingle, PawnRenderFlags.Portrait == flags);
                             }
                         }
                     }

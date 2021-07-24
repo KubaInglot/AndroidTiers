@@ -19,7 +19,7 @@ namespace MOARANDROIDS
 
         private FloatMenuOption GetFailureReason(Pawn myPawn)
         {
-            if (!myPawn.CanReach(this, PathEndMode.InteractionCell, Danger.Some, false, TraverseMode.ByPawn))
+            if (!myPawn.CanReach(this, PathEndMode.InteractionCell, Danger.Some, false, false, TraverseMode.ByPawn))
             {
                 return new FloatMenuOption("CannotUseNoPath".Translate(), null, MenuOptionPriority.Default, null, null, 0f, null, null);
             }

@@ -123,7 +123,7 @@ namespace MOARANDROIDS
 
             private static FloatMenuOption GetFailureReason(Building_Bed bed, Pawn myPawn)
             {
-                if (!myPawn.CanReach(bed, PathEndMode.InteractionCell, Danger.Some, false, TraverseMode.ByPawn))
+                if (!myPawn.CanReach(bed, PathEndMode.InteractionCell, Danger.Some, false, false, TraverseMode.ByPawn))
                 {
                     return new FloatMenuOption("CannotUseNoPath".Translate(), null, MenuOptionPriority.Default, null, null, 0f, null, null);
                 }

@@ -161,9 +161,10 @@
 					<head>Things/Droids/M7Mech/head/</head>
 				</li>
 			</graphicPaths>
-			<hairSettings>
+<!--			<hairSettings>
 				<hasHair>false</hasHair>
 			</hairSettings>
+-->
 			<thoughtSettings>
 				<cannotReceiveThoughtsAtAll>true</cannotReceiveThoughtsAtAll>
 			</thoughtSettings>
@@ -345,6 +346,8 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
+		<initialResistanceRange>50~75</initialResistanceRange>
+		<initialWillRange>5~7</initialWillRange>
 	</PawnKindDef>
 	<AlienRace.BackstoryDef>
 		<defName>MechanizedInfantry</defName>

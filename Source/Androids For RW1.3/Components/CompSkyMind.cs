@@ -385,7 +385,7 @@ namespace MOARANDROIDS
             {
                 if (cp.guest != null)
                 {
-                    cp.guest.SetGuestStatus(Faction.OfPlayer, true);
+                    cp.guest.SetGuestStatus(Faction.OfPlayer, GuestStatus.Prisoner);
                     if (cp.workSettings == null)
                     {
                         cp.workSettings = new Pawn_WorkSettings(cp);
